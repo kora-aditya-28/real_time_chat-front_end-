@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<head>
+  
+  <style>
+    body {
+         
+        background-size: cover;
+        background-position: 100%,100%;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+    }
+
+    header {
+      text-align: center;
+      padding: 0px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row; /* Changed to display user list and chat side by side */
+      align-items: flex-start; /* Align user list and chat content to the top */
+    }
+
+    #user-list {
+      flex: 1; 
+      padding: 20px;
+    }
+
+    #group-chat {
+      flex: 2; 
+      display: flex;
+      flex-direction: column;
+    }
+
+    #group-chat h2 {
+      text-align: center;
+    }
+
+    #group-chat-messages {
+      padding: 20px;
+    }
+
+    #group-chat-input {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #group-message {
+      flex: 1;
+    }
+
+    #send-group-message {
+      margin-left: 10px;
+    }
+
+    #multimedia-sharing {
+      margin-top: 20px;
+    }
+
+    #media-file {
+      margin-bottom: 10px;
+    }
+
+    #send-media {
+      margin-left: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body align="center" background="C:\Users\laptop\Downloads\pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg">
+    <header>
+        <h1 style="color: crimson;">Real-Time Chat</h1>
+    </header>
+    <main>
+        <div id="user-list">
+            <h2>User List</h2>
+            <ul style="color: aqua;">
+                <li>Aditya</li>
+                <li>Dileep</li>
+                <li>Nandini</li>
+                <li>Pavan</li>
+                <li>Praveena</li>
+                <li>Thanmai Gupta</li>
+            </ul>
+        </div>
+        <div id="group-chat">
+            <h2>Group Chat</h2>
+            <div id="group-chat-messages">
+                <!-- Group chat messages go here -->
+            </div>
+            <div id="group-chat-input">
+                <textarea id="group-message" placeholder="Type your message..."></textarea>
+                <button id="send-group-message">Send</button>
+            </div>
+        </div>
+    </main>
+    
+ 
+</body>
+</html>
